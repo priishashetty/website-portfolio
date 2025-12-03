@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess</title>
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #000000;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      animation: pageSlideDown 0.8s forwards;
+    }
+
+    a {
+      display: block;
+      cursor: pointer;
+    }
+
+    img {
+      height: 90vh;
+      width: auto;
+      display: block;
+    }
+
+    @keyframes pageSlideDown {
+      0% {
+        transform: translateY(-100vh);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+  </style>
+</head>
+<body>
+ <a href="handbag-open.html" class="transition">
+    <img src="chess2.jpg" alt="Chess board">
+  </a>
+
+</body>
+</html>

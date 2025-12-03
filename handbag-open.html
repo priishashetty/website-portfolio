@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2. handbag open</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #FFFEE6;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      font-family: "Cabin", sans-serif;
+  animation: pageSlideUp 0.7s forwards;
+}
+
+@keyframes pageSlideUp {
+  0% {
+    transform: translateY(100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.folder-link {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+    #trigger {
+      display: none;
+    }
+
+    label {
+      cursor: pointer;
+      z-index: 5;
+    }
+
+    .main-img {
+      width: 500px;
+      max-width: 90vw;
+      height: auto;
+      display: block;
+      position: relative;
+      z-index: 5;
+    }
+
+    .folderGroup {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: transform 1s ease-out, opacity 1s ease-out;
+      text-align: center; 
+    }
+
+    .folderGroup img {
+      width: 130px;
+      height: auto;
+      display: block;
+      margin-bottom: 12px; 
+    }
+
+    .folderGroup span {
+      font-size: 22px;
+      font-weight: 400;
+    }
+
+
+    #trigger:checked ~ #g1 {
+      opacity: 1;
+      transform: translate(-50%, -50%) translate(-330px, -230px);
+    }
+
+    #trigger:checked ~ #g2 {
+      opacity: 1;
+      transform: translate(-50%, -50%) translate(330px, -230px);
+    }
+
+    #trigger:checked ~ #g3 {
+      opacity: 1;
+      transform: translate(-50%, -50%) translate(-330px, 230px);
+    }
+
+    #trigger:checked ~ #g4 {
+      opacity: 1;
+      transform: translate(-50%, -50%) translate(330px, 230px);
+    }
+
+  </style>
+</head>
+<body>
+
+  <input type="checkbox" id="trigger">
+
+  <label for="trigger">
+    <img src="2.png" class="main-img">
+  </label>
+
+ <div id="g1" class="folderGroup">
+  <a href="handbag1.html" class="folder-link">
+    <img src="folder1.png">
+    <span>handbag</span>
+  </a>
+</div>
+
+  <div id="g2" class="folderGroup">
+  <a href="textile1.html" class="folder-link">
+    <img src="folder2.png">
+    <span>textile</span>
+  </a>
+</div>
+
+  <div id="g3" class="folderGroup">
+    <a href="digitalart.html" class="folder-link">
+    <img src="folder3.png">
+    <span>digital art</span>
+  </a>
+  </div>
+
+  <div id="g4" class="folderGroup">
+        <a href="chess1.html" class="folder-link">
+    <img src="folder4.png">
+    <span>conceptual art</span>
+    </a>
+  </div>
+
+</body>
+</html>

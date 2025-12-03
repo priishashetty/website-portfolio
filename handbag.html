@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1. handbag</title>
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #FFFEE6;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    img {
+      width: 500px;
+      max-width: 90vw;
+      height: auto;
+      animation: slideDown 0.8s ease-out;
+    }
+
+    @keyframes slideDown {
+      0% {
+        transform: translateY(-100vh);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="handbag-open.html">
+    <img src="1.png" alt="Handbag">
+  </a>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Textile – view 2</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400&family=Pinyon+Script&family=Instrument+Serif&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #fbf3e4;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      animation: pageSlideDown 0.8s forwards;
+      color: #000000;
+    }
+
+    @keyframes pageSlideDown {
+      0% { transform: translateY(-100vh); }
+      100% { transform: translateY(0); }
+    }
+
+    a {
+      display: block;
+      cursor: pointer;
+      color: #000000;
+    }
+
+    .img-container {
+      position: relative;
+      display: inline-block;
+      transform: translateX(-80px); 
+    }
+
+    img {
+      height: 90vh;
+      width: auto;
+      display: block;
+    }
+
+    .pichwai {
+      position: absolute;
+      top: 138px;
+      left: 613px;
+      font-family: "Pinyon Script", cursive;
+      font-size: 96px;
+      width: 275px;
+      height: 128px;
+      pointer-events: none;
+      color: #000000;
+    }
+
+    .lotus {
+      position: absolute;
+      top: 198px;
+      left: 649px;
+      font-family: "Instrument Serif", serif;
+      font-size: 96px;
+      width: 454px;
+      height: 125px;
+      pointer-events: none;
+      color: #000000;
+    }
+
+    .desc {
+      position: absolute;
+      top: 339.77px;
+      left: 640px;
+      width: 548px;
+      height: 261px;
+      font-family: "Cabin", sans-serif;
+      font-size: 24px;
+      line-height: 1.35;
+      pointer-events: none;
+      color: #000000;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="handbag-open.html">
+    <div class="img-container">
+      <img src="textile2.png" alt="Textile view 2">
+
+      <div class="pichwai">Pichwai</div>
+      <div class="lotus">Lotus offering</div>
+      <div class="desc">
+        This motif features a delicately rendered hand gracefully holding a blooming lotus, illustrated in the traditional Pichwai art style. Intricate linework, soft ornamental detailing, and heritage-inspired aesthetics reflect the symbolism of purity, devotion, and serenity. The motif was elegantly integrated into an invitation card design, creating a visual identity that feels sacred, celebratory, and culturally rooted, while still maintaining a refined contemporary composition.
+      </div>
+
+    </div>
+  </a>
+
+</body>
+</html>
